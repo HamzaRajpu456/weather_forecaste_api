@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+db.sqlite3
+venv/
+
+API_KEY = '9c51651d232cb6dfd384298bc6f648e1'
