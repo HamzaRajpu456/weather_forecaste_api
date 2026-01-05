@@ -1,13 +1,14 @@
 import requests
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from decouple import config
 
 
 
 
 ALLOWED_CITIES = ['lahore', 'karachi', 'london', 'tokyo', 'new york']
 
-API_KEY = 'api_key'
+API_KEY = config('OPENWEATHER_API_KEY')
 
 class WeatherAPIView(APIView):
 
